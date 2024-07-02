@@ -19,7 +19,7 @@ app.use(morgan('dev'));
 app.use(express.json()); // método que ayuda a convertir el código para que el servidor pueda entender lo que viene del cliente.
 
 app.use(cors({
-    origin: 'https://tu-frontend-angular.com', // Reemplaza con el dominio de tu frontend
+    origin: 'https://gestion-empleados-front.vercel.app', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
