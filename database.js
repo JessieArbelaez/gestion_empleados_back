@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://Cluster05051:EZMPM5LUqHzTG2jG@cluster05051.wiq9asc.mongodb.net/empleados';
+const URI = process.env.MONGODB_URL;
 
 mongoose.connect(URI)
 
