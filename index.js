@@ -18,13 +18,7 @@ app.use(morgan('dev'));
 
 app.use(express.json()); // método que ayuda a convertir el código para que el servidor pueda entender lo que viene del cliente.
 
-app.use(cors({
-    origin: 'https://gestion-empleados-front.vercel.app', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
-    optionsSuccessStatus: 204
-}));
+app.use(cors());
 // método para comunicar con el cliente
 
 // rutas de nuestro servidor
