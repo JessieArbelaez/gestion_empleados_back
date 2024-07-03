@@ -18,8 +18,7 @@ app.use(morgan('dev'));
 
 app.use(express.json()); // método que ayuda a convertir el código para que el servidor pueda entender lo que viene del cliente.
 
-app.use(cors());
-// método para comunicar con el cliente
+app.use(cors()); // método para comunicar con el cliente
 
 // rutas de nuestro servidor
 

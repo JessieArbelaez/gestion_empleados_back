@@ -21,7 +21,7 @@ empleadoCtrl.getEmpleados = async (req, res) => {
     const empleados = await Empleado.find();
 
     res.json(empleados);
-
+    res.set('Access-Control-Allow-Origin', '*');
 }
 
 // Crear empleados
